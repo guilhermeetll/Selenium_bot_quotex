@@ -1,0 +1,13 @@
+site = 'https://qxbroker.com/pt/sign-in/'
+campo_email_login = '//*[@id="tab-1"]/form/div[1]/input'
+campo_senha_login = '//*[@id="tab-1"]/form/div[2]/input'
+campo_login_botao = '//*[@id="tab-1"]/form/button'
+espera_broker_carregar = '//*[@id="root"]/div/div[1]/header/div[8]/div[2]/div'
+menu_conta_demo = '//*[@id="root"]/div/div[1]/header/div[8]/div[2]/div'
+botao_conta_demo = '//*[@id="root"]/div/div[1]/header/div[8]/div[2]/div[2]/ul[1]/li[3]/a'
+sala_de_sinais = '//*[@id="root"]/div/aside[1]/nav/button[3]'
+seleciona_sinal = '//*[@id="root"]/div/aside[2]/div[2]/div[3]/div/div[1]/div[1]/div'
+le_sinal_compra = '//*[@id="root"]/div/aside[2]/div[2]/div[3]/div/div[1]/div[1]/*[@class="icon-arrow-up-circle panel-trading-signals__circle--up"]'
+botao_compra = '//*[@id="root"]/div/div[1]/main/div[2]/div[1]/div/div[6]/div[1]/button'
+botao_venda = '//*[@id="root"]/div/div[1]/main/div[2]/div[1]/div/div[6]/div[4]/button'
+num_max_operacoes= 100
