@@ -61,8 +61,12 @@ def le_sinal_e_executa(navegador, ativo):
     num_operacoes = 0
     while (num_operacoes <= num_max_operacoes):
         try:
-            WebDriverWait(navegador, 10).until(EC.presence_of_element_located((By.XPATH, seleciona_sinal)))
-            ativo = navegador.find_element(By.XPATH, seleciona_sinal).text
+            try:
+                WebDriverWait(navegador, 9999999).until(EC.presence_of_element_located((By.XPATH, seleciona_sinal)))
+                sleep(0.5)
+                ativo = navegador.find_element(By.XPATH, seleciona_sinal).text
+            except:
+                pass
             if ativoProx != ativo: #Compara se o ativo mudou
                 ativoProx = ativo  #Atribui o novo ativo para o proximo
                 navegador.find_element(By.XPATH, seleciona_sinal).click() #Seleciona esse novo ativo
